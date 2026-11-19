@@ -33,12 +33,33 @@ class CasaLuluSeeder extends Seeder
             'numero_recensioni' => 60,
         ]);
 
+        // Esempio all'interno del tuo Seeder:
         $struttura->foto()->createMany([
-            ['url' => 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200', 'didascalia' => 'Open space luminoso al piano principale', 'copertina' => true, 'ordine' => 1],
-            ['url' => 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800', 'didascalia' => 'Camera matrimoniale Queen Size al piano superiore', 'copertina' => false, 'ordine' => 2],
-            ['url' => 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800', 'didascalia' => 'Angolo cottura attrezzato con macchina espresso', 'copertina' => false, 'ordine' => 3],
-            ['url' => 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800', 'didascalia' => 'Bagno moderno con ampia cabina doccia', 'copertina' => false, 'ordine' => 4],
-            ['url' => 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=800', 'didascalia' => 'A due passi dalla Certosa di San Martino e dal Vomero', 'copertina' => false, 'ordine' => 5],
+            [
+                'url' => '/immagini/foto1.jpg', // <-- Sostituisci con il nome esatto del tuo file 1
+                'didascalia' => 'Soggiorno luminoso di Casa Lulù',
+                'ordine' => 1
+            ],
+            [
+                'url' => '/immagini/foto2.jpg',    // <-- Sostituisci con il nome esatto del tuo file 2
+                'didascalia' => 'Camera da letto matrimoniale',
+                'ordine' => 2
+            ],
+            [
+                'url' => '/immagini/foto3.jpg',    // <-- Sostituisci con il nome esatto del tuo file 3
+                'didascalia' => 'Cucina attrezzata',
+                'ordine' => 3
+            ],
+            [
+                'url' => '/immagini/foto4.jpg',     // <-- Sostituisci con il nome esatto del tuo file 4
+                'didascalia' => 'Bagno moderno con doccia',
+                'ordine' => 4
+            ],
+            [
+                'url' => '/immagini/foto5.jpg',  // <-- Sostituisci con il nome esatto del tuo file 5
+                'didascalia' => 'Balcone / Vista Vomero',
+                'ordine' => 5
+            ],
         ]);
 
         $struttura->servizi()->createMany([
